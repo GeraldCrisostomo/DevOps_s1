@@ -21,15 +21,6 @@ class GenesisController{
 		require(VIEW_PATH . 'genesis.php');
 	}
 
-    /**
-     * @return GenesisController
-     */
-    public static function GetGenesisController()
-    {
-        require_once('controllers/GenesisController.php');
-        $controller = new GenesisController();
-        return $controller;
-    }
 
 
 }

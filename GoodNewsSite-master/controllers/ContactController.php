@@ -35,14 +35,4 @@ class ContactController{
 		# Ecrire ici la vue
 		require(VIEW_PATH . 'contact.php');
 	}
-
-    /**
-     * @return ContactController
-     */
-    public static function GetContactController()
-    {
-        require_once('controllers/ContactController.php');
-        $controller = new ContactController();
-        return $controller;
-    }
 }
