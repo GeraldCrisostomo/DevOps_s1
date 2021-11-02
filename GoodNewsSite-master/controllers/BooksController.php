@@ -18,4 +18,14 @@ class BooksController{
 		# $books contient un tableau d'objets de la classe Livre
 		require(VIEW_PATH . 'books.php');
 	}
+
+    /**
+     * @return BooksController
+     */
+    public static function GetBooksController()
+    {
+        require_once('controllers/BooksController.php');
+        $controller = new BooksController();
+        return $controller;
+    }
 }

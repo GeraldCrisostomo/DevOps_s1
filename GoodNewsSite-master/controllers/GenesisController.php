@@ -20,7 +20,16 @@ class GenesisController{
 		# Un contrôleur se termine en écrivant une vue
 		require(VIEW_PATH . 'genesis.php');
 	}
-	
-	
+
+    /**
+     * @return GenesisController
+     */
+    public static function GetGenesisController()
+    {
+        require_once('controllers/GenesisController.php');
+        $controller = new GenesisController();
+        return $controller;
+    }
+
 
 }
